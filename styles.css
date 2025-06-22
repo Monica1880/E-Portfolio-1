@@ -103,8 +103,9 @@ background-color: #5d3eff;
 .about-me__info--container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    max-width: 600px;
+    max-width: 300px;
     margin: 0 auto;
     text-align: center;
 }
@@ -120,8 +121,7 @@ background-color: #5d3eff;
 
 .about-me__picture {
     width: 100%;
-    transform: scale(1.5);
-    padding-top: 8px;
+    transform: scale(1.1), rotate(50deg);
 }
 
 .about-me__info--title {
