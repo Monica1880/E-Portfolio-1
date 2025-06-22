@@ -34,6 +34,10 @@ li {
     flex: 1;
 }
 
+.container {
+    padding: 50px 0;
+}
+
 .row {
     width: 100%;
     max-width: 800px;
@@ -42,6 +46,14 @@ li {
 
 .text--purple {
     color: #6030b1;
+}
+
+section:nth-child(even) {
+    background-color: #f8f8f8;
+}
+
+.section__title {
+    margin-bottom: 20px;
 }
 
 
@@ -105,7 +117,7 @@ background-color: #5d3eff;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 300px;
+    max-width: 300;
     margin: 0 auto;
     text-align: center;
 }
@@ -121,7 +133,10 @@ background-color: #5d3eff;
 
 .about-me__picture {
     width: 100%;
-    transform: scale(1.1), rotate(50deg);
+    transform: scale(1.1);
+    rotate: 5deg;
+    padding-bottom: 200px;
+    padding-right: 100px;
 }
 
 .about-me__info--title {
@@ -146,10 +161,25 @@ background-color: #5d3eff;
     align-items: center;
     display: flex;
     align-items: center;
-    padding-left: 100px;
 }
+
+.about-me__img {
+    width: 100%;
+} 
 
 /* Improving my own picture */
  transform: scale(1.5);
  padding-right: 8px;
 
+
+ /* TECH - STACK */
+
+ .language_img {
+  width: 100%;
+  max-width: 100px;
+ }
+
+ .language_img--wrapper {
+    width:25%;
+
+ }
