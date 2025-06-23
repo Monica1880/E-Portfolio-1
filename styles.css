@@ -198,10 +198,15 @@ background-color: #5d3eff;
     justify-content: center;
     align-items: center;
     padding: 25px 16px;
+    flex-direction: column;
  }
 
  .language__list {
     display: flex;
     width: 100%;
     flex-wrap: wrap;
+ }
+
+ .language_name {
+    position: absolute;
  }
