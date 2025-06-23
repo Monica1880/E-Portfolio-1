@@ -170,9 +170,6 @@ background-color: #5d3eff;
     width: 100%;
 } 
 
-/* Improving my own picture */
- transform: scale(1.5);
- padding-right: 8px;
 
 
  /* TECH - STACK */
@@ -183,14 +180,22 @@ background-color: #5d3eff;
   transition: all 300ms;
  }
 
- .language__img:hover { 
+ .language:hover .language__img { 
     filter: brightness(80%);
     opacity: 0.86;
     transform: scale(0.9);
  }
 
+ .language:hover .language_name {
+    transform: scale(1);
+    opacity: 1;
+ }
+
  .language {
     width: 25%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
  }
 
  .language__img--wrapper {
@@ -209,4 +214,9 @@ background-color: #5d3eff;
 
  .language_name {
     position: absolute;
+    bottom: 0;
+    transform: scale(0);
+    transition: all 300ms;
+    font-size: 20px;
+    opacity: 0;
  }
